@@ -1,0 +1,7 @@
+{
+    "cli_path": "${LG_WEBOS_TV_SDK_HOME}/CLI",
+    "projects_dir": "C:\\Users\\a.eroshenko\\Documents\\webos",
+    // "projects_dir": "d:\\Development\\webos",
+    "target": "emulator",
+    "debug": false
+}

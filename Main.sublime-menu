@@ -1,0 +1,109 @@
+[{
+  "id": "webosmenu",
+  "caption": "Webos",
+  "children": [{
+    "id": "weboscreatewebapp",
+    "caption": "Create Web Application",
+    "command": "webos_create_application"
+  },{
+    "caption": "-"
+  },{
+    "id": "webospackage",
+    "caption": "Package",
+    "children": [{
+      "id": "webospackageminify",
+      "caption": "Minify Package",
+      "command": "webos_package"
+    },{
+      "id": "webospackagenominify",
+      "caption": "No-minify Package",
+      "command": "webos_package",
+      "args": {
+        "mode": "no-minify"
+      }
+    },{
+      "id": "webospackagerom",
+      "caption": "Rom Package",
+      "command": "webos_package",
+      "args": {
+        "mode": "rom"
+      }
+    }]
+  },{
+      "id": "webosinstall",
+      "caption": "Install",
+      "command": "webos_install",
+  },{
+    "caption": "-"
+  },{
+      "id": "webospackageinstalllaunch",
+      "caption": "Package + Install + Run",
+      "command": "webos_install",
+      "args": {
+        "package": "true",
+        "launch": "true"
+      }
+  },{
+      "id": "webospackageinstalldebug",
+      "caption": "Package + Install + Debug",
+      "command": "webos_install",
+      "args": {
+        "package": "true",
+        "launch": "true",
+        "package_mode": "no-minify",
+        "debug": "true"
+      }
+  },{
+      "id": "webosinstalllaunch",
+      "caption": "Install + Run",
+      "command": "webos_install",
+      "args": {
+        "launch": "true"
+      }
+  },{
+    "caption": "-"
+  },{
+      "id": "webospreview",
+      "caption": "Run in Web Browser",
+      "command": "webos_preview",
+  },{
+      "id": "weboslaunch",
+      "caption": "Run",
+      "command": "webos_run",
+  },{
+      "id": "webosdebug",
+      "caption": "Debug",
+      "command": "webos_run",
+      "args": {
+        "debug": "true"
+      }
+  },{
+    "caption": "-"
+  },{
+      "id": "webossettings",
+      "caption": "Preferences",
+      "children": [{
+        "id": "webossettings",
+        "caption": "Settings",
+        "command": "edit_settings", "args":
+          {
+              "base_file": "${packages}/Webos/Webos.sublime-settings",
+              "default": "// Settings in here override those in \"Webos/Webos.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
+          },
+          "caption": "Settings"
+      },{
+        "id": "weboskeymap",
+        "caption": "Key Bindings",
+        "command": "edit_settings", "args":
+        {
+            "base_file": "${packages}/Webos/Default (Windows).sublime-keymap",
+        },
+      }]
+  },{
+    "caption": "-"
+  },{
+     "id": "webosoutputview",
+      "caption": "Show Output Log",
+      "command": "webos_show_output_view",
+  }]
+}]
